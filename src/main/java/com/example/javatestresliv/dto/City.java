@@ -5,7 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "city", schema = "public")
 public class City {
+
     @Id
+    @GeneratedValue
     private Long id;
     @Column(unique = true)
     private String name;
