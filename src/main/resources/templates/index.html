@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="text/javascript" src="/webjars/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <input id="findCityValue" placeholder="Input city name">
+    <button onclick="getMethodOne(findCityValue())">GET ONE BY NAME</button>
+    <button onclick="getMethod()"> GET ALL</button>
+    <input id="addCityValue" placeholder="Input city name">
+    <input id="addMessageValue" placeholder="Input city description">
+    <button onclick="postOne()">ADD</button>
+</div>
+<table id="city"></table>
+
+<script src="../static/script.js"></script>
+</body>
+</html>

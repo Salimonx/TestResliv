@@ -40,7 +40,7 @@ public class CityService {
     }
 
     public List<City> getAll() {
-        return cityRepository.findAll();
+        return cityRepository.findAllByOrderByIdAsc();
     }
 
     public void deleteById(Long id) {
