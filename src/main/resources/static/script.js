@@ -78,6 +78,9 @@ function changeOne(data) {
             success: function (data) {
                 getMethod();
                 alert("Success updated!")
+            },
+            error: function (error) {
+                alert(error.responseText);
             }
         });
     }
@@ -102,6 +105,7 @@ function postOne() {
                 clear();
             },
             error: function (error) {
+                alert(error.responseText);
             }
         });
     } else

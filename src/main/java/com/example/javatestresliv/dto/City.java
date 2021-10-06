@@ -7,7 +7,8 @@ import javax.persistence.*;
 public class City {
 
     @Id
-    @GeneratedValue
+    @SequenceGenerator( name = "jpaSequence", sequenceName = "JPA_SEQUENCE", allocationSize = 1, initialValue = 4 )
+    @GeneratedValue( strategy = GenerationType.SEQUENCE, generator = "jpaSequence")
     private Long id;
     @Column(unique = true)
     private String name;
