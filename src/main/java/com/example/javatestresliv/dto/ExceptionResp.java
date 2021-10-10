@@ -2,9 +2,10 @@ package com.example.javatestresliv.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sun.istack.internal.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import javax.validation.constraints.NotNull;
 
 public class ExceptionResp {
     private String message;
